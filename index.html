@@ -47,12 +47,22 @@ to {color: cyan;}
 </style>
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;subset=cyrillic" rel="stylesheet"> 
 <link rel="icon" type="image/ico" href="favicon.ico" />
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script>
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+</script>
 </head>
 <body>
 <center>
 <img src = "img/didrusFace.png" style = "width: 128px; height: 128px; position: absolute; margin: -20px 1px 1px 10px; border: none;"></img>
 <p style = "font-size: 36px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; opacity: 0.5; z-index: 1; animation: clr 2s infinite alternate; margin-left: 10px">Рожные приключения 2</p>
 <p style = "font-size: 36px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; z-index: 2;position: relative; top: -80px;">Рожные приключения 2</p>
+<a href = "#roja2" class = "framedButton" style = "position:relative">Рожные приключения 2</a>
 </center>
 
 <p style = "font-size: 14px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; position: relative; display: block; left: 10px; top: -35px">DIDRUS games</p>
@@ -60,6 +70,11 @@ to {color: cyan;}
 <center>
 <img src = "https://pp.userapi.com/c841424/v841424399/6fe3b/sKIPaEPiUuI.jpg" alt = "Рожные приключения 2"></img>
 <img src = "https://pp.userapi.com/c841424/v841424399/6fe31/ZgIb73cGG2I.jpg" alt = "Рожные приключения 2"></img>
-<a href = "/about.html" class = "framedButton">Рожные приключения 2</a></center>
+<div id = "roja2">
+	<p style = "color: white;">
+	Рожные приключения 2 - сиквел к игре "Рожные приключения", созданной DIDRUS games. Действия игры происходят после атомного взрыва на планете зад макаки, произведённого красной стороной. <br />Главный герой решается отправиться на войну с красной стороной в надежде победить и уничтожить их оружие.
+	</p>
+</div>
+</center>
 </body>
 </html>
