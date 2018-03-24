@@ -23,6 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;subset=cyrillic" rel="stylesheet"> 
 	<link rel="icon" type="image/ico" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="cssbox.css" />
 
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 
@@ -80,8 +81,30 @@
 	<p style = "font-size: 14px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; position: relative; display: block; left: 10px; top: -35px">DIDRUS games</p>
 
 	<center>
-		<img src = "https://pp.userapi.com/c841424/v841424399/6fe3b/sKIPaEPiUuI.jpg" alt = "Рожные приключения 2"></img>
-		<img src = "https://pp.userapi.com/c841424/v841424399/6fe31/ZgIb73cGG2I.jpg" alt = "Рожные приключения 2"></img>
+		<div class="cssbox">
+			  <a id="image1" href="#image1">
+			    <img class="cssbox_thumb" src="https://pp.userapi.com/c841424/v841424399/6fe3b/sKIPaEPiUuI.jpg">
+			    <span class="cssbox_full">
+			      <img src="full-1.jpg">
+			    </span>
+			  </a>
+			  <a class="cssbox_close" href="#void"></a>
+			  <a class="cssbox_next" href="#image2">&gt;</a>
+			</div>
+
+			<div class="cssbox">
+			  <a id="image1" href="#image2">
+			    <img class="cssbox_thumb" src="https://pp.userapi.com/c841424/v841424399/6fe31/ZgIb73cGG2I.jpg">
+			    <span class="cssbox_full">
+			      <img src="full-2.jpg">
+			    </span>
+			  </a>
+			  <a class="cssbox_close" href="#void"></a>
+			  <a class="cssbox_prev" href="#image1">&lt;</a>
+			  <a class="cssbox_next" href="#image3">&gt;</a>
+			</div>
+		</div>
+
 		<div id = "roja2">
 			<p style = "color: white;">
 			Рожные приключения 2 - сиквел к игре "Рожные приключения", созданной DIDRUS games. Действия игры происходят после ядерного взрыва на планете зад макаки, произведённого красной стороной. <br />Главный герой решается отправиться на войну с красной стороной в надежде победить их.
