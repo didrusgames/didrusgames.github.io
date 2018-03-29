@@ -25,7 +25,10 @@
 	<link rel="icon" type="image/ico" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="cssbox.css" />
 
-	<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+	<script
+			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
 
 	<script>
 		$('a[href^="#"]').bind('click.smoothscroll',function (e) {
@@ -69,6 +72,14 @@
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/48101771" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+	<script>
+		function loadRoja2Page(){
+			$("#pageContent").fadeOut(1500, function(){$("#pageContent").load("roja2.html");$("#pageContent").fadeIn(1500);});
+		}
+		function loadContactsPage(){
+			$("#pageContent").fadeOut(1500, function(){$("#pageContent").load("contacts.html");$("#pageContent").fadeIn(1500);});
+		}
+	</script>
 </head>
 <body>
 	<div class = "site-noise"></div>
@@ -76,11 +87,16 @@
 		<img src = "img/didrusFace.png" style = "width: 128px; height: 128px; position: absolute; margin: -20px 1px 1px 10px; border: none;"></img>
 		<p style = "font-size: 36px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; opacity: 0.5; z-index: 1; animation: clr 2s infinite alternate; margin-left: 10px">Рожные приключения 2</p>
 		<p style = "font-size: 36px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; z-index: 2;position: relative; top: -80px;">Рожные приключения 2</p>
-		<a href = "#roja2" class = "framedButton" style = "position:relative">Рожные приключения 2</a>
+		<a onclick = "loadRoja2Page();" class = "framedButton" style = "position:relative"><small>Рожные приключения 2</small></a>
+		<a onclick = "loadContactsPage()" class = "framedButton" style = "position:relative">Контакты</a>
 	</center>
 
 	<p style = "font-size: 14px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; position: relative; display: block; left: 10px; top: -35px">DIDRUS games</p>
-
+	<div id = "roja2">
+		<p style = "color: white;" id = "pageContent">
+		Рожные приключения 2 - сиквел к игре "Рожные приключения", созданной DIDRUS games. Действия игры происходят после ядерного взрыва на планете зад макаки, произведённого красной стороной. <br />Главный герой решается отправиться на войну с красной стороной в надежде победить их.
+		</p>
+	</div>
 	<center>
 		<div class="cssbox">
 			  <a id="image1" href="#image1">
@@ -102,12 +118,6 @@
 			</a>
 			<a class="cssbox_close" href="#void"></a>
 			<a class="cssbox_prev" href="#image1">&lt;</a>
-		</div>
-
-		<div id = "roja2">
-			<p style = "color: white;">
-			Рожные приключения 2 - сиквел к игре "Рожные приключения", созданной DIDRUS games. Действия игры происходят после ядерного взрыва на планете зад макаки, произведённого красной стороной. <br />Главный герой решается отправиться на войну с красной стороной в надежде победить их.
-			</p>
 		</div>
 	</center>
 	<hr />
