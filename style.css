@@ -54,7 +54,7 @@ to {color: cyan;}
 .site-noise:before
 {
 	animation: grain 3s steps(6) infinite;
-	background: url('/images/noise.png');
+	background: url('/img/noise.png');
 	content: '';
 	display: block;
 	height: 300%;
