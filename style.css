@@ -39,3 +39,31 @@ from {color: red;}
 50% {color: #fd00ff;}
 to {color: cyan;}
 }
+.site-noise
+{
+	height: 100vh;
+	left: 0;
+	overflow: hidden;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 560;
+}
+
+.site-noise:before
+{
+	animation: grain 3s steps(6) infinite;
+	background: url('/images/noise.png');
+	content: '';
+	display: block;
+	height: 300%;
+	left: -100%;
+	opacity: .7;
+	pointer-events: none;
+	position: absolute;
+	top: -100%;
+	webkit-animation: grain 2s steps(6) infinite;
+	width: 300%;
+	will-change: transform;
+}
