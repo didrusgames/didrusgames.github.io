@@ -79,6 +79,9 @@
 		function loadContactsPage(){
 			$("#pageContent").fadeOut(1500, function(){$("#pageContent").load("contacts.html");$("#pageContent").fadeIn(1500);});
 		}
+		function loadDownloadPage(){
+			$("#pageContent").fadeOut(1500, function(){$("#pageContent").load("download.html");$("#pageContent").fadeIn(1500);});
+		}
 	</script>
 </head>
 <body>
@@ -88,7 +91,8 @@
 		<p style="font-size: 14px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; position: absolute;top: 150px;">DIDRUS games</p>
 		<p style = "font-size: 36px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; opacity: 0.5; z-index: 1; animation: clr 2s infinite alternate; margin-left: 10px">Рожные приключения 2</p>
 		<p style = "font-size: 36px; color: white; font-weight: bold; font-family: 'Press Start 2P', cursive; z-index: 2;position: relative; top: -80px;">Рожные приключения 2</p>
-		<a onclick = "loadRoja2Page();" class = "framedButton" style = "position:relative"><small>Рожные приключения 2</small></a>
+		<a onclick = "loadRoja2Page();" class = "framedButton" style = "position:relative">Рожные приключения 2</a>
+		<a onclick = "loadDownloadPage();" class = "framedButton" style = "position:relative">Проекты</a>
 		<a onclick = "loadContactsPage()" class = "framedButton" style = "position:relative">Контакты</a>
 	</center>
 	<center>
